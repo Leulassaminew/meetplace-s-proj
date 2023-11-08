@@ -20,8 +20,8 @@ def run(prompt, params={}, stream=False):
         'repetition_penalty': 1.2,
         'batch_size': 8,
         'stream': stream,
-        'character': "Kynthia",
-        'score':0
+        #'character': "Kynthia",
+        #'score':0
 
     }
 
