@@ -64,12 +64,13 @@ def load_model():
         default_settings = {
             k: getattr(generator.settings, k) for k in dir(generator.settings) if k[:2] != '__'
         }
-        lora_dir = os.environ["LORA_DIR"]    
+        """lora_dir = os.environ["LORA_DIR"]    
         lora_config = os.path.join(lora_dir, "adapter_config.json")
         lora_model = os.path.join(lora_dir, "adapter_model.bin")
-        lora = ExLlamaLora(model, lora_config, lora_model)
+        lora = ExLlamaLora(model, lora_config, lora_model)"""
 
-    return generator, default_settings, lora
+    return generator, default_settings#
+    , lora
 
 generator = None
 default_settings = None
