@@ -64,7 +64,7 @@ sex = personality[3]
 city = personality[4]
 car = personality[5]
 country = personality[6]
-with open("prompt1.txt", "r") as f:
+with open("promptmeet.txt", "r") as f:
       past = f.read()
       past = past.replace("{username}", first_name)
       past = past.replace("{bot_name}", first_name)
